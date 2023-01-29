@@ -69,7 +69,7 @@ label_when_approved() {
        APPROVAL_LABEL+=":white_check_mark:"
     done
 
-    add_label APPROVAL_LABEL
+    add_label ${APPROVAL_LABEL}
 }
 
 label_when_approved
