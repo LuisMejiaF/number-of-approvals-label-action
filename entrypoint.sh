@@ -66,9 +66,9 @@ label_when_approved() {
 
     APPROVAL_LABEL="Approvals"
 
-    for (( i=1; i<=approvals; i++ ))
+    for (( i=1; i<=$((approvals)); i++ ))
     do
-       APPROVAL_LABEL+=" ✅"
+       APPROVAL_LABEL+=" :white_check_mark:"
     done
 
     add_label ${APPROVAL_LABEL}
