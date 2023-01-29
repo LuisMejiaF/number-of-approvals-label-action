@@ -62,11 +62,13 @@ label_when_approved() {
         fi
     done
 
+    echo "Number of approvals: ${approvals}"
+
     APPROVAL_LABEL="Approvals"
 
     for (( i=1; i<=approvals; i++ ))
     do
-       APPROVAL_LABEL+=" :white_check_mark:"
+       APPROVAL_LABEL+=" ✅"
     done
 
     add_label ${APPROVAL_LABEL}
