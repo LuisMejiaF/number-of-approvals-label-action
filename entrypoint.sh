@@ -23,8 +23,9 @@ API_HEADER="Accept: application/vnd.github.v3+json"
 AUTH_HEADER="Authorization: token ${GITHUB_TOKEN}"
 
 action=$(jq --raw-output .action "$GITHUB_EVENT_PATH")
-state=$(jq --raw-output .review.state "$GITHUB_EVENT_PATH")
-number=$(jq --raw-output .pull_request.number "$GITHUB_EVENT_PATH")
+#state=$(jq --raw-output .review.state "$GITHUB_EVENT_PATH")
+#number=$(jq --raw-output .pull_request.number "$GITHUB_EVENT_PATH")
+number=4200
 
 add_label() {
     LABEL_TO_ADD=$1
