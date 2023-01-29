@@ -1,0 +1,10 @@
+name: Add Number of Approvals Label
+description: Adds a label representing the number of approvals on the PR
+inputs:
+    icon:
+        description: The Unicode icon to use to represent the approval
+        required: false
+        default: ✅
+runs:
+    using: docker
+    image: Dockerfile
