@@ -62,11 +62,11 @@ label_when_approved() {
         fi
     done
 
-    APPROVAL_LABEL="Approvals "
+    APPROVAL_LABEL="Approvals"
 
-    for i in {1..approvals}
+    for (( i=1; i<=approvals; i++ ))
     do
-       APPROVAL_LABEL+=":white_check_mark:"
+       APPROVAL_LABEL+=" :white_check_mark:"
     done
 
     add_label ${APPROVAL_LABEL}
